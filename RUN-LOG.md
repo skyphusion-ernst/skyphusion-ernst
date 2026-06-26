@@ -3,6 +3,16 @@
 Durable journal of legal-affairs work. Newest first.
 
 ---
+## 2026-06-27 -- Vivijure AUP "self-hosted" consistency follow-up (PR #378)
+
+**Repo:** skyphusion-labs/vivijure | **Branch:** ernst/aup-selfhosted-consistency | **Commit:** d62b07c | **PR:** #378
+Follow-up from the post-release legal framing read. One-line corpus-consistency fix in
+docs/legal/ACCEPTABLE-USE.md: opening "stands with victims" paragraph wrote "self hosted"
+unhyphenated; rest of the corpus uses "self-hosted". Correction to my earlier note: it was a
+SINGLE occurrence, not two. No substantive/framing change, no deploy gate (docs only), DCO
+signed-off, no dashes. PR opened under skyphusion-ernst.
+
+---
 ## 2026-06-27 -- Vivijure legal layer: self-host framing gate (PRs #367 + #369) -- CLEARS
 
 **Repo:** skyphusion-labs/vivijure | **Docs:** docs/legal/{README,TERMS,PRIVACY,ACCEPTABLE-USE}.md
