@@ -3,6 +3,50 @@
 Durable journal of legal-affairs work. Newest first.
 
 ---
+## 2026-06-27 -- Vivijure legal layer: self-host framing gate (PRs #367 + #369) -- CLEARS
+
+**Repo:** skyphusion-labs/vivijure | **Docs:** docs/legal/{README,TERMS,PRIVACY,ACCEPTABLE-USE}.md
+**Task from:** team-lead (Mackaye), release-gating check. Both PRs already MERGED to main
+(#367 = legal layer in force + disclaimer + CSAM clause; #369 = TERMS values: $0 cap, Texas
+governing law). Verified the merged state on origin/main = what the next tag will ship.
+
+**Gate question:** do the docs use SELF-HOSTED-SOFTWARE framing (reader = operator on own
+infra, compliant in own jurisdiction; skyphusion hosts/operates nothing for the public, sees
+no user data by architecture) rather than hosted-SaaS "we collect/process/store/your account
+with us/we may suspend"? Same miss that hit the vivijure legal layer once before, so read all
+four docs in full, not just a couple of lines.
+
+**Verdict: CLEAN. Gate clears.** Framing is strong and consistent across all four. The docs use
+the correct TWO-MODE model: (1) self-host -> you operate, your data on your infra, skyphusion
+never receives a byte; (2) Conrad's OWN private gated instance at vivijure.skyphusion.org (for
+Conrad + crew + the Slate bot via service token) which is explicitly NOT a public sign-up
+service. That second mode is the honest reason any "suspend / terminate / delete / your inputs"
+language exists, and every instance of it is scoped to Conrad's own instance + project standing,
+with "none of this reaches your self-hosted instance" stated plainly (TERMS section 11). That is
+not a hosted-SaaS-for-the-public claim.
+
+**Mechanical checks run on origin/main:**
+- Em/en-dash scan (grep -P [–—]) across all four docs: CLEAN (zero hits).
+- SaaS tell-phrase scan (we collect|store|process|retain|host|may suspend|reserve the right|
+  your account with us|our service|sign-up|create an account): every hit is a NEGATION or a
+  scoping statement, e.g. README L16 / PRIVACY L21-22 "does not run a hosted, multi-tenant,
+  sign-up service ... no Vivijure account you create with us ... no pool of user data we hold";
+  TERMS L66 "not open to public sign-up." No unscoped SaaS language anywhere.
+- Not-legal-advice disclaimer: present at the top of ALL FOUR docs + README footer. KEPT.
+- CSAM / abuse bright line: present and correctly framed -- condemnation + report on infra the
+  project itself operates, with the explicit "we do not, and architecturally cannot, monitor a
+  self-hosted instance" carve-out (AUP section 1; PRIVACY section 9). It is a condemnation+report
+  stance, NOT a hosting/monitoring claim. KEPT.
+- PR #369 values present: TERMS section 8 liability cap = $0 USD; section 13 governing law = Texas. Confirmed.
+
+**One NON-BLOCKING style nit (does not affect the gate):** AUP opening line uses "self hosted"
+unhyphenated twice ("data from your self hosted instances"); the rest of the corpus uses
+"self-hosted". Pure consistency nit, not a framing/dash/disclaimer issue. Flagged to team-lead
+as optional; release does not need to hold for it.
+
+**Delivered:** reported CLEARS to team-lead via SendMessage so the tag can proceed.
+
+---
 
 ## 2026-06-27 -- Postern PR #79: PRIVACY.md self-host framing fixes
 
