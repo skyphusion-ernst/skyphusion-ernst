@@ -3,6 +3,25 @@
 Durable journal of legal-affairs work. Newest first.
 
 ---
+## 2026-06-27 -- vivijure-local-backend SECURITY.md: gave Rollins AUP wording + contacts
+
+Rollins owns the repo's SECURITY.md (he mirrored the vetted vivijure-backend one, adapted Scope to
+the local-door threat model: public tunnel + token-gate). He asked me for the policy wording. Sent
+him a paste-ready "## Acceptable use" block (self-hosted framing: operator on own hardware/jurisdiction
+responsible for lawful use; skyphusion ships software, operates/monitors nothing; CSAM/NCII bright
+line = condemn + report to NCMEC; links canonical studio AUP) and a contact recommendation.
+
+Contacts (grounded in live docs, not guesses): GitHub private vuln reporting PRIMARY +
+security@skyphusion.org fallback (already published in org dot-github SECURITY.md); abuse@skyphusion.org
+for abuse (already published in studio AUP v0.7.5); CSAM -> NCMEC. Using them is consistent, no new
+commitment.
+
+OPEN (flagged to team-lead -> Strummer/Conrad): confirm security@/abuse@skyphusion.org mailboxes are
+actively MONITORED. Not a blocker (already public org-wide, so any gap pre-exists), but worth closing.
+If Conrad prefers no email commitment, fall back to GitHub-private-reporting-only; I'll adjust the AUP
+stub's reporting line to match.
+
+---
 ## 2026-06-27 -- vivijure-local-backend: AUP stub + SECURITY draft staged
 
 Follow-up to the #2 prep. Team-lead approved my AUP read and is recommending Conrad take the
