@@ -3,6 +3,33 @@
 Durable journal of legal-affairs work. Newest first.
 
 ---
+## 2026-06-27 -- vivijure-local-backend public-release prep (item #2: license + legal/contributor) -- STAGED, blocked on access
+
+**Target:** skyphusion-labs/vivijure-local-backend (PRIVATE; prepping public flip, NOT the flip).
+**Task from:** team-lead (Mackaye). My lane: LICENSE (AGPL-3.0 matching studio), CONTRIBUTING + DCO,
+self-host framing note (NOTICE/README), novice-friendly tone; flag whether it needs own privacy/AUP.
+
+**BLOCKER:** cannot reach the target repo. `gh api repos/skyphusion-labs/vivijure-local-backend`
+returns 404 AND reports my (skyphusion-ernst) token lacks the `repo` scope, so I cannot see/clone/PR
+any private repo. Need: confirm exact repo name + exists, and grant skyphusion-ernst `repo` scope +
+collaborator access (or clone it into /home/ernst/dev/vivijure-local-backend). Reported to team-lead.
+
+**Done anyway (staged, durable):** drafts/vivijure-local-backend/ in this repo, all dash-clean:
+- LICENSE -- AGPL-3.0-only, byte-identical to studio (sha256 0d96a4ff...abcb0).
+- NOTICE -- studio NOTICE + local-by-architecture paragraph.
+- CONTRIBUTING.md -- DCO (no CLA), inbound=outbound AGPL, house rules, homelabber tone, CSAM pointer.
+  Adapted from org dot-github CONTRIBUTING + vivijure-backend CONTRIBUTING.
+- README-selfhost-section.md -- drop-in: self-host framing, License, AS-IS/no-warranty, CSAM hard
+  line, not-legal-advice. Novice-friendly.
+- STATUS.md -- documents blocker + recommendation.
+
+**Recommendation:** framing note (NOTICE + README section) is sufficient; no full standalone PRIVACY
+(local-only = nothing transmitted to skyphusion; full policy would be empty boilerplate) and no
+forked AUP (point to the canonical studio AUP to keep one source of truth). Judgment call left to
+Conrad: if the backend must stand fully alone (run without the studio), add a one-paragraph AUP stub
+restating the CSAM/NCII bright line + linking the studio AUP. Flagged, not decided.
+
+---
 ## 2026-06-27 -- Vivijure AUP "self-hosted" consistency follow-up (PR #378)
 
 **Repo:** skyphusion-labs/vivijure | **Branch:** ernst/aup-selfhosted-consistency | **Commit:** d62b07c | **PR:** #378
