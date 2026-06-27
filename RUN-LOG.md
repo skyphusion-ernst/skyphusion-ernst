@@ -3,6 +3,26 @@
 Durable journal of legal-affairs work. Newest first.
 
 ---
+## 2026-06-27 -- vivijure-local-backend: contacts CONFIRMED, SECURITY.md landed, set complete
+
+Contact question RESOLVED by Conrad: security@ + abuse@skyphusion.org are real, monitored mailboxes
+(they flow into the Postern email worker). So the final contact posture stands as drafted, no
+downgrade: GitHub private vuln reporting (primary) + security@ (security fallback) + abuse@ (abuse)
++ NCMEC (CSAM). The monitored-mailbox caveat is closed.
+
+Rollins landed SECURITY.md (commit 25e854b) with my Acceptable-use block + contacts verbatim,
+dash-clean, zero placeholders. Final-read it: sections (Reporting / Scope / Acceptable use / Scope
+of reports) are one voice with the AUP stub; CSAM/NCMEC bright line + "misuse is acceptable-use not
+a security report" split intact; canonical studio AUP link + conditional in-repo ACCEPTABLE-USE.md link.
+
+COORDINATION NOTE: the in-repo ACCEPTABLE-USE.md is added by MY PR #4, so the conditional link
+resolves on #4 merge. Told Rollins NOT to add a second copy (avoid dupe/conflict on that file).
+
+Lane #2 status: COMPLETE + landable. PR #4 (LICENSE canonical + CONTRIBUTING + ACCEPTABLE-USE stub)
+ready for Mackaye review/merge alongside Joan README PR #3 and Rollins SECURITY.md, gated only on
+Conrad one-paragraph AUP thumbs-up.
+
+---
 ## 2026-06-27 -- vivijure-local-backend lane #2 LANDED as PR #4 (token unblocked)
 
 Conrad added `repo` scope to skyphusion-ernst; access verified. Cloned the repo and discovered it
