@@ -3,6 +3,23 @@
 Durable journal of legal-affairs work. Newest first.
 
 ---
+## 2026-06-27 -- vivijure-local-backend: AUP stub + SECURITY draft staged
+
+Follow-up to the #2 prep. Team-lead approved my AUP read and is recommending Conrad take the
+STANDALONE option (backend can run without the studio, so it carries the CSAM/NCII red line
+itself). Staged in drafts/vivijure-local-backend/ (commit cfcdb3b), dash-clean:
+- ACCEPTABLE-USE.md -- one-paragraph CSAM/NCII red line + condemnation/report (NCMEC) + link to
+  canonical studio AUP. One source of truth: stub restates only the absolute line, points to studio.
+- SECURITY.md -- DRAFT vuln-reporting policy + abuse contact, modeled on org dot-github SECURITY,
+  tailored for local-on-your-hardware (no hosted service to attack; operator secures their own box).
+  PENDING: coordinate contacts (security@ / abuse@skyphusion.org) + backend wording with Rollins,
+  then Conrad sign-off. Ernst = natural owner once access lands.
+
+Access blocker unchanged (Conrad's call: grant ernst repo scope/collaborator, or it lands at the
+public flip via public-scoped token). Not urgent; weekend pre-flip window. Messaging Rollins re
+SECURITY contacts.
+
+---
 ## 2026-06-27 -- vivijure-local-backend public-release prep (item #2: license + legal/contributor) -- STAGED, blocked on access
 
 **Target:** skyphusion-labs/vivijure-local-backend (PRIVATE; prepping public flip, NOT the flip).
