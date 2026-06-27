@@ -53,3 +53,18 @@ add is a tiny `ACCEPTABLE-USE.md` stub in this repo that states the CSAM/NCII br
 one paragraph and links the canonical studio AUP for the rest. I can add that stub if Conrad
 wants the backend self-contained; otherwise the pointer in CONTRIBUTING + README is enough.
 Flagging rather than deciding, since "self-contained vs points-to-studio" is a posture call.
+
+## Update 2026-06-27 (post team-lead review)
+
+- Team-lead approved the AUP read AND is recommending Conrad take the STANDALONE option, so the
+  one-paragraph `ACCEPTABLE-USE.md` stub is now STAGED (CSAM/NCII red line + condemnation/report
+  + link to the canonical studio AUP). Rationale endorsed: the CSAM bright line belongs on every
+  product that can generate, standalone or not. Pending Conrad's confirm; lands when access does.
+- `SECURITY.md` STAGED as a DRAFT (vuln-reporting policy + abuse contact), modeled on the org
+  default, tailored for a local-on-your-hardware backend. PENDING coordination with Rollins on
+  the exact contact addresses (security@ / abuse@) and any backend-specific reporting wording,
+  then Conrad's sign-off. Ernst is the natural owner once access lands.
+- Access blocker unchanged and is Conrad's call: (a) grant skyphusion-ernst collaborator + repo
+  scope to land under Ernst's identity, or (b) it lands naturally at the public flip (public-scoped
+  token works the instant the repo is public). Work is durable + complete; only landing-location
+  is pending. No urgency; targets the weekend pre-flip window.
