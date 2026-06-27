@@ -3,6 +3,34 @@
 Durable journal of legal-affairs work. Newest first.
 
 ---
+## 2026-06-27 -- vivijure-local-backend lane #2 LANDED as PR #4 (token unblocked)
+
+Conrad added `repo` scope to skyphusion-ernst; access verified. Cloned the repo and discovered it
+was NOT empty (my earlier staging assumed empty): LICENSE + NOTICE + README already existed, Joan's
+README rewrite is PR #3, no CONTRIBUTING/SECURITY/AUP. So I reconciled instead of blind-adding.
+
+PR #4 (branch ernst/legal-contributor, under skyphusion-ernst, DCO signed-off, dash-clean):
+- LICENSE -- REPLACED the existing mangled AGPL copy (235 lines, reflowed, http:// URLs) with the
+  canonical verbatim FSF AGPL-3.0-only, now byte-identical to studio (sha256 0d96a4ff...abcb0).
+- CONTRIBUTING.md (new) -- DCO/inbound=outbound/house rules/pytest CPU flow/CSAM pointer, repo-tailored.
+- ACCEPTABLE-USE.md (new) -- the standalone stub, PENDING Conrad one-paragraph confirm.
+
+Reconciliation (so the PRs do not contradict, per Mackaye):
+- NOTICE left as-is (already studio-matching); README owns the homelabber self-host framing.
+- README NOT touched -- Joan PR #3 already one voice with NOTICE (License section mirrors it; "your
+  data never leaves your box"; "skyphusion hosts nothing and sees nothing"). Avoided two PRs on one file.
+- SECURITY.md NOT in my PR -- Rollins owns it as a single file; I sent him finalized policy text;
+  CONTRIBUTING forward-references SECURITY.md (resolves when his lands).
+
+Rollins convergence: he accepted my policy model; contacts = org-wide security@ + abuse@ (NOT a
+backend alias); GitHub private vuln reporting will be ENABLED at the flip (primary) + security@
+fallback; he added backend-specific scope (token-gate bypass = #1, R2/token leak, identity-strip
+regression, SSRF via attacker R2 keys; weights are safetensors = low-risk). Open item still routed to
+Strummer/Conrad: confirm security@/abuse@ mailboxes are actually monitored before flip.
+
+Staged drafts dir in skyphusion-ernst is now superseded by the live PR; kept for history.
+
+---
 ## 2026-06-27 -- vivijure-local-backend SECURITY.md: gave Rollins AUP wording + contacts
 
 Rollins owns the repo's SECURITY.md (he mirrored the vetted vivijure-backend one, adapted Scope to
