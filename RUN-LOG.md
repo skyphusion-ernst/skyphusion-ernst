@@ -3,6 +3,32 @@
 Durable journal of legal-affairs work. Newest first.
 
 ---
+## 2026-06-27 -- vivijure-local-backend lane #2 WRAPPED to durable; session stand-down
+
+Final state, all durable:
+- PR #4 (ernst/legal-contributor): LICENSE canonical (studio-identical AGPL), CONTRIBUTING.md,
+  ACCEPTABLE-USE.md stub. Verified MERGEABLE / mergeStateStatus CLEAN over current main -- no rebase
+  needed; the LICENSE supersede (replacing the repo's mangled AGPL copy) is conflict-free. Open,
+  awaiting Mackaye integration + Conrad one-paragraph AUP thumbs-up.
+- SECURITY.md on main (Rollins 25e854b): my Acceptable-use block + confirmed contacts verbatim,
+  dash-clean, one voice with the AUP stub. Read + signed off.
+- Joan README PR #3: she force-pushed a revision reconciling the License/self-host wording to my
+  canonical voice (postern-#79 style AGPL network-service line + "Skyphusion Labs operates nothing
+  here, so we hold none of your data" + the NOTICE labor-of-love / not-for-SaaS lines). Read the
+  CURRENT text; dash-clean and one voice. Approved her option (A) keep-the-reconciled-version, and
+  OK'd her adding a one-line ACCEPTABLE-USE.md pointer (resolves when #4 merges; Mackaye merges
+  #3+#4 together).
+- Contacts FINAL (Conrad): GitHub private vuln reporting + security@ fallback + abuse@ + NCMEC;
+  security@/abuse@ are monitored (flow into the Postern worker). Mailbox flag closed.
+- Cross-links line up on merge: CONTRIBUTING -> SECURITY.md (already on main); SECURITY.md +
+  README -> ACCEPTABLE-USE.md (lands with #4). Told Rollins not to dupe the AUP file.
+
+Whole-day arc: held the self-host-not-SaaS legal posture across postern (#79), vivijure (verified
+clean vs live v0.7.5 + #378 hyphenation), and vivijure-local-backend (#2 set + SECURITY coordination).
+Standing down. Token now has repo scope. drafts/vivijure-local-backend/ kept as history (superseded
+by the live PR #4 + Rollins SECURITY.md).
+
+---
 ## 2026-06-27 -- vivijure-local-backend: contacts CONFIRMED, SECURITY.md landed, set complete
 
 Contact question RESOLVED by Conrad: security@ + abuse@skyphusion.org are real, monitored mailboxes
